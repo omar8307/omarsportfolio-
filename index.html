@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Omar Abdul Haseeb — Information Science Engineering student.">
+<title>Omar Abdul Haseeb | Portfolio</title>
+<style>
+:root{--bg:#08090b;--surface:#101216;--surface2:#15171c;--text:#f2f3f5;--muted:#9ca3af;--line:#252832;--accent:#8b5cf6;--accent2:#a78bfa;--max:1100px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(92%,var(--max));margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(8,9,11,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.04em;font-size:1.05rem}.logo span{color:var(--accent2)}
+.nav-links{display:flex;gap:26px;color:var(--muted);font-size:.9rem}.nav-links a:hover{color:var(--text)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden}
+.glow{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.16),transparent 68%);right:-120px;top:100px;pointer-events:none}
+.eyebrow{color:var(--accent2);font-size:.85rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(3rem,8vw,6.8rem);line-height:.95;letter-spacing:-.07em;max-width:900px}h1 span{color:var(--accent2)}
+.hero p{max-width:650px;color:var(--muted);font-size:1.12rem;margin:26px 0 34px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border:1px solid var(--line);border-radius:10px;font-weight:650;font-size:.92rem;transition:.2s ease}.btn.primary{background:var(--text);color:#08090b;border-color:var(--text)}.btn:hover{transform:translateY(-2px);border-color:#414552}
+section{padding:105px 0;border-top:1px solid var(--line)}
+.section-label{color:var(--accent2);font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;margin-bottom:12px}
+h2{font-size:clamp(2rem,4vw,3.3rem);letter-spacing:-.05em;margin-bottom:18px}.intro{color:var(--muted);max-width:700px;margin-bottom:42px}
+.about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:55px}.about-text{font-size:1.08rem;color:#c8cbd2}
+.facts{display:grid;gap:14px}.fact{padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}.fact small{display:block;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}.fact strong{display:block;margin-top:4px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:9px 14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;color:#d6d8de}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:linear-gradient(145deg,var(--surface),var(--surface2));border:1px solid var(--line);border-radius:16px;padding:27px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s ease}.card:hover{transform:translateY(-4px);border-color:#3b3f4b}
+.number{font-size:.78rem;color:var(--accent2);font-weight:800;letter-spacing:.1em}.card h3{font-size:1.35rem;letter-spacing:-.025em;margin:12px 0 10px}.card p{color:var(--muted);font-size:.94rem}.tag{display:inline-block;margin-top:18px;color:#c4c7cf;font-size:.78rem}
+.timeline{border-left:1px solid var(--line);padding-left:25px}.timeline-item{position:relative;margin-bottom:28px}.timeline-item:before{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--accent2);left:-30px;top:9px;box-shadow:0 0 0 5px var(--bg)}.timeline-item small{color:var(--accent2)}.timeline-item h3{margin:4px 0}.timeline-item p{color:var(--muted)}
+.contact-box{display:flex;align-items:center;justify-content:space-between;gap:30px;background:var(--surface);border:1px solid var(--line);padding:32px;border-radius:16px}
+footer{padding:35px 0;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:750px){.nav-links{display:none}.about-grid,.projects{grid-template-columns:1fr}.hero{min-height:90vh}.contact-box,footer{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<nav><div class="container nav-inner"><a class="logo" href="#top">OAH<span>.</span></a><div class="nav-links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div></div></nav>
+
+<main id="top">
+<header class="hero"><div class="glow"></div><div class="container">
+<div class="eyebrow">Information Science Engineering · 2nd Year</div>
+<h1>Omar Abdul <span>Haseeb</span></h1>
+<p>I’m an Information Science Engineering student at Gopalan College of Engineering and Management, interested in building practical technology and strengthening my foundations in computer science.</p>
+<div class="buttons"><a class="btn primary" href="https://github.com/omar8307" target="_blank">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/omar-abdul-haseeb-1a26a53b9" target="_blank">LinkedIn ↗</a><a class="btn" href="#projects">View Projects</a></div>
+</div></header>
+
+<section id="about"><div class="container"><div class="section-label">01 / About</div><h2>Learning by building.</h2><div class="about-grid"><p class="about-text">I’m currently pursuing Information Science Engineering and am in my 3rd semester. I enjoy exploring programming and turning ideas into working projects. My current programming foundation is in Python and C, while I continue to expand my knowledge through coursework, projects, and hackathons.</p><div class="facts"><div class="fact"><small>College</small><strong>Gopalan College of Engineering and Management</strong></div><div class="fact"><small>Degree</small><strong>Information Science Engineering</strong></div><div class="fact"><small>Current</small><strong>2nd Year · 3rd Semester</strong></div><div class="fact"><small>CGPA</small><strong>8.95 / 10</strong></div></div></div></div></section>
+
+<section id="skills"><div class="container"><div class="section-label">02 / Skills</div><h2>Current toolkit.</h2><p class="intro">A focused list of technologies I currently work with.</p><div class="skills"><span class="skill">Python</span><span class="skill">C</span></div></div></section>
+
+<section id="projects"><div class="container"><div class="section-label">03 / Projects</div><h2>Things I’ve built.</h2><p class="intro">Selected academic and hackathon projects.</p><div class="projects">
+<article class="card"><div><div class="number">PROJECT 01</div><h3>QR-Based Attendance System</h3><p>A QR-based approach to recording and managing attendance, developed as an academic project.</p></div><span class="tag">Academic Project</span></article>
+<article class="card"><div><div class="number">PROJECT 02</div><h3>Automatic Plant Watering System</h3><p>An automated plant-watering project designed around the idea of monitoring plant watering needs.</p></div><span class="tag">Academic / Hardware Project</span></article>
+<article class="card"><div><div class="number">PROJECT 03</div><h3>APNA for Criminal Network Analysis</h3><p>AI-powered network analysis focused on identifying and analyzing relationships within criminal networks.</p></div><span class="tag">SIH Internal Hackathon</span></article>
+</div></div></section>
+
+<section id="journey"><div class="container"><div class="section-label">04 / Journey</div><h2>Education & learning.</h2><div class="timeline">
+<div class="timeline-item"><small>2025 — Present</small><h3>B.E. Information Science Engineering</h3><p>Gopalan College of Engineering and Management · 2nd Year / 3rd Semester · CGPA: 8.95</p></div>
+<div class="timeline-item"><small>Certification</small><h3>Programming in C</h3><p>Coursera</p></div>
+<div class="timeline-item"><small>In Progress</small><h3>AI: Foundation and Algorithm</h3><p>Coursework in progress; certificate examination pending.</p></div>
+<div class="timeline-item"><small>Hackathon</small><h3>SIH Internal Hackathon</h3><p>Participated in the internal hackathon with the APNA for Criminal Network Analysis project.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="container"><div class="section-label">05 / Contact</div><h2>Let’s connect.</h2><div class="contact-box"><p style="color:#c8cbd2">Find me by email, on GitHub, or LinkedIn.</p><div class="buttons"><a class="btn primary" href="mailto:omar.abdul.haseeb810@gmail.com">Email ↗</a><a class="btn" href="https://www.linkedin.com/in/omar-abdul-haseeb-1a26a53b9" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/omar8307" target="_blank" rel="noopener noreferrer">GitHub ↗</a><p style="color:var(--muted);margin-top:16px"><a href="mailto:omar.abdul.haseeb810@gmail.com">omar.abdul.haseeb810@gmail.com</a></p></div></div></section>
+</main>
+<footer class="container"><span>© 2026 Omar Abdul Haseeb</span><span>Built with curiosity.</span></footer>
+</body>
+</html>
